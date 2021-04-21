@@ -28,8 +28,8 @@ def run_meta_for_all_dbs(dbs):
         run_optimize(meta_graph)
 
 
+run_optimize('_system')
 dbs = list_databases()
 run_meta_for_all_dbs(dbs)
 run_commits_for_all_dbs(dbs)
 run_optimize('admin/profiles')
-run_optimize('_system')
